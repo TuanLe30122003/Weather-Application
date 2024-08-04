@@ -23,7 +23,15 @@ const SearchDialog = () => {
                 </DialogTrigger>
 
                 <DialogContent className="p-0">
-                    <Command className="round-lg border shadow-md"></Command>
+                    <Command className="round-lg border shadow-md">
+                        <CommandInput
+                            placeholder="Type a command or search..."
+                        />
+
+                        <ul className="px-3 pb-2">
+                            <p className="p-2 text-sm text-muted-foreground">Suggestions</p>
+                        </ul>
+                    </Command>
 
                 </DialogContent>
             </Dialog>
